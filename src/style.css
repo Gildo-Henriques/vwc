@@ -1,0 +1,24 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+    font-family: 'Manrope', sans-serif;
+    
+
+    /* overflow-x: hidden; */
+}
+input[type="checkbox"]{
+  display: none;
+
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+  /* transform: translatex(100%); */
+  right : 0%;
+  
+}

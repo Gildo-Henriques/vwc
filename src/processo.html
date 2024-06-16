@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="w-full flex flex-col lg:px-10 px-2">
+      <header
+        class="bg-white/70 shadow h-20 z-20 fixed w-full justify-between px-5 flex items-center lg:hidden md:hidden"
+      >
+        <div class="flex justify-between items-center z-10">
+          <span class="text-xl">VW</span>
+          <img class="w-14 h-16 -ml-2" src="./img/icon/icon.png" alt="" />
+        </div>
+        <input type="checkbox" id="chec" />
+        <label
+          for="chec"
+          class="flex z-10 justify-center items-center border-2 border-red-400 rounded-md h-10 w-12"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            /></svg
+        ></label>
+        <nav
+          class="bg-white/50 w-full h-full top-0 -right-full fixed ease-in-out duration-500 block backdrop-blur-md"
+        >
+          <ul class="gap-y-5 mt-24">
+            <a
+              href="../index.html"
+              class="hover:text-red-700 transition-all px-4 py-2 rounded-lg flex justify-between w-full items-center"
+            >
+              <span>HOME</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
+            <a
+              href="sobre.html"
+              class="hover:text-red-700 transition-all px-4 py-2 rounded-lg flex justify-between w-full items-center"
+            >
+              <span>SOBRE</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
+            <a
+              href="./src/servicos.html"
+              class="hover:text-red-700 px-4 py-2 rounded-lg flex justify-between w-full items-center"
+            >
+              <span>SERVIÇOS</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
+            <a
+              href="./processo.html"
+              class="text-red-700 transition-all px-4 py-2 rounded-lg flex justify-between w-full items-center"
+            >
+              <span>PROCESSO</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
+          </ul>
+        </nav>
+      </header>
+      <!-- desktop -->
+      <header class="hidden lg:block md:block">
+        <nav class="w-full flex px-5">
+          <ul class="w-full flex justify-between">
+            <a href="" class="flex items-center">
+              <span class="text-xl font-semibold">VW</span>
+              <img class="w-20 h-24 -ml-3" src="./img/icon/icon.png" alt="" />
+            </a>
+            <li class="flex items-center gap-x-5">
+              <a
+                href="../index.html"
+                class="hover:bg-red-500 hover:text-white transition-all px-4 py-2 rounded-lg"
+                >HOME</a
+              >
+              <a
+                href="sobre.html"
+                class="hover:bg-red-500 hover:text-white transition-all px-4 py-2 rounded-lg"
+                >SOBRE</a
+              >
+              <a
+                href="servicos.html"
+                class="hover:bg-red-500 hover:text-white transition-all px-4 py-2 rounded-lg"
+                >SERVIÇOS</a
+              >
+              <a
+                href="processo.html"
+                class="bg-red-500 text-white px-4 py-2 rounded-lg"
+                >PROCESSO</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Conteudo de cima com uma foto e o título com borda na foto -->
+      <div class="mt-20 block lg:hidden md:hidden"></div>
+
+      <section
+        class="w-full flex flex-col justify-center relative lg:h-[550px] h-80 rounded-3xl"
+      >
+        <!-- div com gradient -->
+        <div
+          class="absolute rounded-3xl flex items-center w-full lg:h-[550px] h-80 bg-black/50 z-10"
+        >
+          <div
+            class="flex flex-col lg:px-32 md:px-10 px-5 space-y-5 text-white"
+          >
+            <span class="lg:text-xl"
+              >Vistos e Serviços Emigratórios para Canada</span
+            >
+            <h1 class="font-bold lg:text-5xl md:text-3xl text-2xl">
+              <i
+                >Onde a Experiência se Encontra  <br class="hidden lg:flex" />
+                com a Exclusividade
+              </i>
+            </h1>
+          </div>
+        </div>
+        <!-- imagem de canada -->
+        <img
+          src="./img/um-dia-no-escritorio-de-uma-agencia-de-viagens.jpg"
+          alt=""
+          class="absolute lg:h-[550px] h-80 w-full rounded-3xl"
+        />
+        <!-- Página inicial e home -->
+        <!-- SECCÃO 1 -->
+
+      </section>
+      <!-- PROCESSO1 -->
+      <section
+        class="flex gap-y-8 relative md:flex-row lg:flex-row w-full 2xl:h-60 lg:gap-x-8 md:gap-x-3 md:items-center lg:items-start flex-col-reverse lg:px-28 2xl:px-32 mt-10"
+      >
+        <img
+          src="./img/pexels-jopwell-2422278.jpg"
+          alt=""
+          class="w-96 rounded-xl"
+        />
+        <div class="flex flex-col space-y-3 justify-center h-full px-5">
+          <h2 class="font-semibold text-3xl text-red-700">
+            1. Consultoria preliminar
+          </h2>
+          <p class="text-md text-slate-700">
+            Nesta consultoria avaliamos a tua elegibilidade para teres imigrares
+            ao Canadá, e as formas mais apropriadas para tal em termos
+            processuais. Nesta consultoria opreçario é abordado e se o cliente
+            decide prosseguir com a processo, declarações consensuais e termos
+            gerais são também acordados *As demais consultorias estarão inclusas
+            no preço do serviço
+          </p>
+        </div>
+      </section>
+      <!-- PROCESSO2 -->
+      <section
+        class="flex gap-y-8 relative md:flex-row lg:flex-row w-full 2xl:h-60 lg:gap-x-8 md:gap-x-3 md:items-center lg:items-start flex-col lg:px-28 2xl:px-32 mt-10"
+      >
+        <div class="flex flex-col space-y-3 justify-center h-full px-5">
+          <h2 class="font-semibold text-3xl text-red-700">
+            2. Preparação de formulários <span class="text-2xl text-slate-700">/ documentos</span>
+          </h2>
+          <p class="text-md text-slate-700">
+            O cliente terá de preencherformulários com dados pessoais, e
+            submeter documentos exigidos pelo Consulado do Canadá. A lista dos
+            documentos requeridos serão indicados pela VWC que fará a triagem,
+            traduções, melhoramento, reservas de hotel e viagem para a submissão
+            do visto junto ao cliente de forma virtual. *Este passo é iniciado
+            logo após o pagamento total do serviço de aplicação de visto (Pacote
+            quero IR) por passaporte.
+          </p>
+        </div>
+        <img
+          src="./img/pessoas-de-tiro-medio-no-escritorio-da-agencia.jpg"
+          alt=""
+          class="w-96 rounded-xl"
+        />
+      </section>
+      <!-- PROCESSO3 -->
+      <section
+        class="flex gap-y-8 relative md:flex-row lg:flex-row w-full 2xl:h-60 lg:gap-x-8 md:gap-x-3 md:items-center lg:items-start flex-col-reverse lg:px-28 2xl:px-32 mt-10"
+      >
+        <img
+          src="./img/visa-application-composition-with-canadian-flag.jpg"
+          alt=""
+          class="w-96 rounded-xl"
+        />
+        <div class="flex flex-col justify-center h-full space-y-3 px-5">
+          <h2 class="font-semibold text-3xl text-red-700">
+            3. Submissão do Visto.
+          </h2>
+          <p class="text-md text-slate-700">
+            A VWC submete o processo aos serviços migratórios Canadenses,
+            fazendo bem como o pagamento da taxa de solicitação e impressões
+            digitais (para maiores de 14 anos) por passaporte. *Para impressões
+            digitais, o cliente é responsável em honrar com todos os custos
+            neste processo onde normalmente têm que se deslocar para África do
+            Sul ou República Democrática do Congo.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="flex gap-y-8 relative md:flex-row lg:flex-row w-full 2xl:h-60 lg:gap-x-8 md:gap-x-3 md:items-center lg:items-start flex-col lg:px-28 2xl:px-32 mt-10"
+      >
+        <div class="flex flex-col space-y-3 justify-center h-full px-5">
+          <h2 class="font-semibold text-3xl text-red-700">4. Recebemos-te.</h2>
+          <p class="text-md text-slate-700">
+            A VWC e seus colaboradores tem estrutura para te receber no Canada,
+            fazer arranjo para tua estadia temporária e de forma geral marcar os
+            teus primeiros passos (número de telefone, segurança social,
+            interpretação, transporte público). *Serviços do pacote CHEGUEI são
+            prestados na base da solicitação, o que tem o preço extra por
+            passaporte.
+          </p>
+        </div>
+        <img
+          src="./img/pexels-burst-374870.jpg"
+          alt=""
+          class="w-96 rounded-xl"
+        />
+      </section>
+
+      <section
+        class="flex gap-y-8 relative md:flex-row lg:flex-row w-full 2xl:h-60 lg:gap-x-8 md:gap-x-3 md:items-center lg:items-start flex-col-reverse lg:px-28 2xl:px-32 mt-10"
+      >
+        <img
+          src="./img/pexels-andrea-piacquadio-3769021.jpg"
+          alt=""
+          class="w-96 rounded-xl"
+        />
+        <div class="flex flex-col justify-center h-full space-y-3 px-5">
+          <h2 class="font-semibold text-3xl text-red-700">5. Aconselhamento sobre como ficar</h2>
+          <p class="text-md text-slate-700">
+            A VWC e seus colaboradores têm
+            expertise com detentores do visto de turista que depois transitam
+            para outros estados migratório e ficam no Canadá permanentemente.
+            Nós prestamos assessoria para tal através do nosso pacote quero
+            FICAR. Uma vez no Canadá ajudamos-te neste processo. *Serviços do
+            pacote quero FICAR são prestados na base da solicitação, o que tem o
+            preço extra por passaporte.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer
+    class="w-full flex flex-col items-center mt-10 lg:px-32 px-5 gap-x-10"
+  >
+    <!-- icone com o conteúdo -->
+    <div
+      class="border-t-2 flex flex-col lg:flex-row md:flex-row md:justify-between lg:justify-between justify-around items-center w-full lg:h-32 h-44"
+    >
+      <div class="flex">
+        <img src="./img/icon/icon.png" alt="" class="w-20 h-20" />
+        <div class="flex flex-col justify-center">
+          <h2 class="font-semibold">VISAS TO THE WEST CONSULTING</h2>
+          <p class="text-slate-700 text-xs lg:text-sm">
+            Do mar ao oeste, de Angola ao Canadá!
+          </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="flex space-x-2">
+        <input
+          type="email"
+          class="h-10 lg:w-72 w-full bg-blue-100 rounded-md outline-none px-2"
+          placeholder="Endereço email"
+        />
+        <input
+          type="submit"
+          value="Subscrever"
+          class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-md text-white h-10 active:border-2 active:border-red-500"
+        />
+      </div>
+    </div>
+    <div
+      class="border-t-2 w-full lg:h-20 h-32 flex flex-col lg:flex-row md:flex-row md:justify-between lg:justify-between justify-around items-center"
+    >
+      <!-- links -->
+      <ul>
+        <li class="flex gap-x-5">
+          <a href="" class="text-slate-700 hover:text-red-700">HOME</a>
+          <a href="" class="text-slate-700 hover:text-red-700">SOBRE</a>
+          <a href="" class="text-slate-700 hover:text-red-700">SERVIÇOS</a>
+          <a href="" class="text-slate-700 hover:text-red-700">CONTACTOS</a>
+        </li>
+      </ul>
+      <!-- techmisters -->
+      <p class="text-slate-700">
+        Site criado pelos <span class="text-red-700">Alphas</span>
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>
